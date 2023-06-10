@@ -349,5 +349,18 @@ getElement('#btnSoSanh').onclick = function () {
         // }
             
     }
+    var soDuong1 = soDuong.length;
+    var soAm1 = soAm.length;
+    function SoSanh (){
+        if(soDuong1 > soAm1){
+            getElement('#soSanh').innerHTML = 'số dương > số âm '
+        } else if ( soDuong1 < soAm1){
+            getElement('#soSanh').innerHTML = 'số dương < số âm '
+        }else if (soDuong1 = soAm1){
+            getElement('#soSanh').innerHTML = 'số dương = số âm '
+        }
+    }
+    SoSanh()
+    
     // getElement('#demCacSoDuong').innerHTML = 'số lượng số dương là: ' + total.length;
 }
